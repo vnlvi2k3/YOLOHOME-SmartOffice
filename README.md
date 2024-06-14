@@ -34,7 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
+```
 ## SMART OFFICE
 
 ### Real-Time Dashboard Interface for Office Environment Monitoring
@@ -46,7 +46,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Automotive Check-In/Check-Out Process Through [Teachable Machine](https://teachablemachine.withgoogle.com/) Face Recognition
 ![Screenshot 2024-06-14 104628](https://github.com/vnlvi2k3/YOLOHOME-SmartOffice/assets/139733764/8e253b95-2be4-4a6c-b569-f20a3c1a4db6)
 
-
+```
 
 
 
