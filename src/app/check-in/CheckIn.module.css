@@ -1,0 +1,202 @@
+/* CheckIn.module.css */
+.container {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    /* Additional styles */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+  .cameraView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .cameraFrame {
+    width: 500px;
+    height: 300px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cameraButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f08503;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cameraButton:hover {
+    background-color: #3e3e3e;
+  }
+  
+  .cameraIcon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .employeeInfo {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #fcfafa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employeeInfo p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checking {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 18%;  /* Ensures the parent container takes the full width */
+}
+
+/* General style for all buttons within the checking class */
+.checking button {
+    width: 100%;  /* Makes all buttons the same width */
+    padding: 12px 20px;  /* Consistent padding */
+    margin-top: 10px;  /* Space between buttons */
+    font-size: 16px;  /* Consistent font size */
+    color: white;  /* White text color for all buttons */
+    border: none;
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth transition for background color */
+}
+
+/* Specific styles for each button type */
+.checkinButton {
+    background-color: #4CAF50;  /* Green for check-in */
+}
+
+.checkoutButton {
+    background-color: #f44336;  /* Red for check-out */
+}
+
+.denyButton {
+    background-color: #555555;  /* Dark grey for deny */
+}
+
+.checking button:hover {
+    opacity: 0.8;  /* Slight transparency on hover */
+}
+
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .closeButton {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .recordList {
+    padding: 20px; 
+    margin: 20px 0; 
+    list-style: none;
+    width: 100%; 
+    background-color: #ffffff; /* Sets a clean, white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    overflow-y: auto; /* Adds scroll to the list if content is too long */
+    max-height: 300px; /* Sets a maximum height to enforce scrolling */
+  }
+  
+  .recordItem {
+    background-color: #f9f9f9; /* Light grey background for each record item */
+    border-bottom: 1px solid #e1e1e1; /* Light grey border for separation */
+    padding: 15px; /* Generous padding for better content spacing */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  
+    &:last-child {
+      border-bottom: none; /* Removes bottom border for the last item */
+    }
+  
+    &:hover {
+      background-color: #eef9ff; /* Light blue background on hover */
+    }
+  }
+  
+  .recordItem p {
+    color: #333; /* Dark grey color for better readability */
+    font-size: 16px; /* Adequate font size for readability */
+    line-height: 1.4; /* Adequate line spacing */
+    font-family: 'Arial', sans-serif; /* Modern, readable font */
+  }
+  
+  
+  
+  .recordButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20x;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    font-size: 24px;  /* Adjust size accordingly */
+    cursor: pointer;
+    border-radius: 50%;  /* Makes it circular */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);  /* Optional for a subtle shadow */
+}

@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    overflow: overlay;
+    background-image: url("../../public/bg/bg2.jpg");
+    background-size: 200%;
+}
+
+@media screen and (min-width: 1124px) {
+  body {
+    background-size: 100%;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.navArea {
+  grid-area: navArea;
+}
+
+.chartArea {
+  grid-area: chartArea;
+}
+
+.SidebarArea {
+  grid-area: SidebarArea;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.gridLayout {
+  grid-template-areas: 
+  'navArea navArea  navArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea'
+  'chartArea chartArea  SidebarArea';
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  background: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px; 
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
